@@ -135,13 +135,13 @@
 				<hr>
 				<ul class="nav nav-pills flex-column mb-auto text-white">
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
 							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#home"/></svg>
 							Accueil
 		        </button>
-		        <div class="collapse show" id="home-collapse" style="">
+		        <div class="collapse" id="home-collapse" style="">
 		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="#" class="nav-link active" aria-current="page">Présentation</a></li>
+		            <li><a href="#" class="nav-link text-white">Présentation</a></li>
 		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Disclaimer</a></li>
 		          </ul>
 		        </div>
@@ -211,11 +211,11 @@
 				<hr>
 
 
-				<div class="dropdown">
+				<div class="dropdown show">
 					<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="true"><img src="https://i.servimg.com/u/f76/14/62/10/75/avatar10.jpg" alt="Auteur du site" width="32" height="32" class="rounded-circle me-2"><strong>L'auteur</strong>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-						<li><a class="active dropdown-item show" href="/karate/pages/whoami.html">Qui suis-je ?</a></li>
+						<li><a class="active dropdown-item" aria-current="page" href="/karate/pages/whoami.html">Qui suis-je ?</a></li>
 						<li><a class="dropdown-item" href="/karate/pages/404.html">Me contacter</a></li>
 					</ul>
 				</div>
