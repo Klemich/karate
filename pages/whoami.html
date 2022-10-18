@@ -135,24 +135,24 @@
 				<hr>
 				<ul class="nav nav-pills flex-column mb-auto text-white">
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
 							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#home"/></svg>
 							Accueil
 		        </button>
-		        <div class="collapse" id="home-collapse" style="">
+		        <div class="collapse show" id="home-collapse" style="">
 		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="/karate/index.html" class="nav-link text-white" >Présentation</a></li>
+		            <li><a href="#" class="nav-link active" aria-current="page">Présentation</a></li>
 		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Disclaimer</a></li>
 		          </ul>
 		        </div>
 		      </li>
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#history-collapse" aria-expanded="true">
+		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#history-collapse" aria-expanded="false">
 							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#history"/></svg>	Histoire - 歷史
 		        </button>
-		        <div class="collapse show" id="history-collapse" style="">
+		        <div class="collapse" id="history-collapse" style="">
 		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="/karate/hist/karate.html" class="nav-link active" aria-current="page">Histoire du karaté</a></li>
+		            <li><a href="/karate/hist/karate.html" class="nav-link text-white">Histoire du karaté</a></li>
 		            <li><a href="/karate/hist/tode.html" class="nav-link text-white">Histoire de Tōde</a></li>
 		          </ul>
 		        </div>
@@ -212,19 +212,33 @@
 
 
 				<div class="dropdown">
-					<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://i.servimg.com/u/f76/14/62/10/75/avatar10.jpg" alt="Auteur du site" width="32" height="32" class="rounded-circle me-2"><strong>Auteur</strong>
+					<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="true"><img src="https://i.servimg.com/u/f76/14/62/10/75/avatar10.jpg" alt="Auteur du site" width="32" height="32" class="rounded-circle me-2"><strong>L'auteur</strong>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-						<li><a class="dropdown-item" href="/karate/pages/whoami.html">Qui suis-je ?</a></li>
+						<li><a class="active dropdown-item show" href="/karate/pages/whoami.html">Qui suis-je ?</a></li>
 						<li><a class="dropdown-item" href="/karate/pages/404.html">Me contacter</a></li>
 					</ul>
 				</div>
 			</div>
 			<!-- End of navbar -->
 
-			<div class>
+			<div class="container text-center">
+				<div class="row text-white">
+			    <div class="col">
+						<img src="https://i.servimg.com/u/f76/14/62/10/75/avatar10.jpg" alt="Auteur du site" width="128" height="128" class="rounded-circle me-2">
+						Clément Michard
+			    </div>
+			  </div>
+			  <div class="row text-white">
+			    <div class="col">
+			      Je pratique le karaté depuis 1996. Principalement Shotokan FFKDA, j'ai aussi pratiqué le Wado et le Seido (Kyokushin), un peu de Iaido. Avec un peu d'arbitrage kata, j'ai un développé un intérêt pour la diversité des techniques et des écoles. Des quatres styles majeurs, je connais le Goju-Ryu le moins. Ayant vécu en Chine, j'ai aussi une connaissance basique du Taiji Quan. J'ai pratiqué le sabre en Iaido et le Bo en Seido.
+			    </div>
+			  </div>
+				<div class="row">
+			    <div class="col">
 
-
+			    </div>
+			  </div>
 			</div>
 
 		</main>
