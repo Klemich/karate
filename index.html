@@ -30,12 +30,12 @@
 				}
 			}
 
-			.b-example-divider {
-				height: 3rem;
-				background-color: rgba(0, 0, 0, .1);
-				border: solid rgba(0, 0, 0, .15);
-				border-width: 1px 0;
-				box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+			@media (min-width: 1400px) {
+				.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+					max-width: none;
+					margin-right:none;
+					margin-left: none;
+				}
 			}
 
 			.b-example-vr {
@@ -56,6 +56,11 @@
 				overflow-y: hidden;
 			}
 
+			.nav-link {
+				padding-right:0!important;
+				padding-left:0!important;
+			}
+
 			.nav-scroller .nav {
 				display: flex;
 				flex-wrap: nowrap;
@@ -68,7 +73,7 @@
 			}
 		</style>
 	</head>
-	<body style="--bs-body-bg:  #141619;">
+	<body style="--bs-body-bg:	#141619; overflow: auto;">
 		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 			<symbol id="tode" viewBox="0 0 131 130">
 				<path fill-rule="evenodd" d="M124.961 26.28C123.861 26.693 122.998 27.73 122.836 28.83 122.798 29.093 122.636 31.731 122.461 34.694 122.286 37.645 121.585 49.722 120.898 61.512 120.21 73.301 119.247 89.679 118.772 97.893 118.297 106.107 117.885 113.109 117.86 113.459 117.835 113.796 117.81 103.269 117.797 90.042 117.797 90.042 117.772 66.012 117.772 66.012 117.772 66.012 113.959 66.012 113.959 66.012 113.959 66.012 110.146 66.012 110.146 66.012 110.146 66.012 110.146 93.518 110.146 93.518 110.146 93.518 110.146 121.023 110.146 121.023 110.146 121.023 61.449 121.023 61.449 121.023 61.449 121.023 12.752 121.023 12.752 121.023 12.752 121.023 12.752 93.518 12.752 93.518 12.752 93.518 12.752 66.012 12.752 66.012 12.752 66.012 8.627 66.012 8.627 66.012 8.627 66.012 4.501 66.012 4.501 66.012 4.501 66.012 4.501 94.543 4.501 94.543 4.501 118.86 4.526 123.211 4.688 123.936 5.188 126.286 7.114 128.212 9.464 128.712 10.74 128.987 111.533 128.987 112.809 128.712 114.384 128.374 115.747 127.461 116.634 126.136 116.634 126.136 117.147 125.374 117.147 125.374 117.147 125.374 117.147 126.261 117.147 126.261 117.147 128.312 118.31 129.487 120.46 129.624 121.623 129.687 122.361 129.512 123.061 128.974 123.573 128.587 124.111 127.637 124.211 126.949 124.248 126.686 124.648 120.16 125.086 112.459 125.936 97.943 126.224 93.043 128.524 53.685 129.274 40.758 129.899 29.831 129.899 29.393 129.899 28.105 129.349 27.168 128.249 26.567 127.674 26.255 127.424 26.192 126.461 26.167 125.836 26.155 125.174 26.205 124.961 26.28ZM67.175.5C66.875.625 66.638.788 66.638.863 66.638.925 66.938 1.163 67.313 1.375 68.6 2.113 69.838 3.826 69.988 5.063 70.151 6.601 69.538 7.214 62.512 12.527 52.66 19.966 44.721 25.142 36.819 29.293 32.669 31.468 31.343 32.406 32.044 32.656 32.119 32.694 33.906 32.681 36.007 32.619 40.083 32.519 40.945 32.419 43.283 31.756 45.521 31.131 50.334 29.143 53.135 27.68 53.135 27.68 54.435 26.993 54.435 26.993 54.435 26.993 54.66 27.28 54.66 27.28 54.773 27.443 55.11 27.993 55.398 28.505 55.685 29.018 56.136 29.668 56.386 29.956 56.873 30.481 58.686 33.131 58.611 33.194 57.773 33.931 41.17 42.333 39.945 42.646 39.632 42.721 38.97 42.758 38.47 42.733 37.557 42.671 36.732 42.345 35.457 41.545 35.182 41.37 34.769 41.145 34.519 41.045 34.519 41.045 34.094 40.858 34.094 40.858 34.094 40.858 34.281 41.158 34.281 41.158 34.769 41.908 37.87 45.921 38.607 46.759 40.658 49.084 43.071 51.122 44.946 52.097 45.859 52.56 46.759 52.885 48.234 53.26 48.522 53.335 48.759 53.46 48.759 53.535 48.759 53.885 43.733 58.674 41.783 60.174 38.982 62.349 34.919 64.612 32.144 65.575 29.418 66.513 27.318 66.925 23.942 67.188 22.442 67.3 21.504 67.438 21.129 67.575 20.279 67.913 18.954 68.825 18.391 69.476 17.816 70.113 17.691 70.576 17.791 71.663 17.891 72.826 18.516 73.939 20.191 75.952 23.579 80.028 23.767 80.178 25.942 80.24 28.355 80.315 29.781 79.853 34.794 77.365 42.933 73.314 48.709 70.738 54.273 68.638 57.136 67.563 62.712 65.637 62.974 65.637 63.224 65.637 63.287 69.401 63.149 76.139 62.987 84.328 62.637 88.517 61.762 92.917 61.212 95.668 60.699 96.731 59.211 98.218 57.661 99.756 55.81 100.719 53.26 101.294 52.06 101.557 51.672 101.582 48.634 101.569 45.133 101.557 44.383 101.482 40.633 100.656 39.22 100.344 36.882 100.156 36.882 100.369 36.882 100.519 39.52 102.632 41.758 104.282 44.383 106.22 47.446 108.195 51.11 110.296 54.323 112.134 55.185 112.696 56.511 113.809 57.961 115.034 58.574 115.334 59.399 115.234 60.174 115.134 60.549 114.947 62.137 113.784 64.35 112.184 66.012 110.321 67.275 108.045 71.588 100.269 73.614 88.379 74.139 67.9 74.201 65.262 74.289 63.074 74.326 63.037 74.452 62.899 76.352 62.649 78.24 62.512 80.49 62.337 85.916 62.412 86.704 62.624 88.317 63.037 101.432 64.15 102.482 63.95 103.069 63.837 103.957 63.012 104.22 62.312 104.732 60.961 104.382 59.349 103.344 58.323 101.782 56.773 93.493 52.297 91.08 51.71 89.792 51.385 87.904 51.272 86.141 51.397 84.266 51.535 83.128 51.722 79.828 52.447 77.49 52.96 74.477 53.51 73.976 53.51 73.776 53.51 73.764 53.198 73.789 48.297 73.789 48.297 73.826 43.083 73.826 43.083 73.826 43.083 75.177 41.995 75.177 41.995 77.165 40.383 78.977 39.22 81.103 38.182 83.803 36.857 84.141 36.519 84.141 35.169 84.141 33.031 81.703 30.456 78.702 29.431 77.765 29.105 77.565 29.08 75.764 29.093 74.314 29.105 73.551 29.18 72.764 29.356 72.764 29.356 71.701 29.606 71.701 29.606 71.701 29.606 70.638 28.58 70.638 28.58 68.775 26.793 67.188 25.43 65.012 23.754 65.012 23.754 64.6 23.429 64.6 23.429 64.6 23.429 65.462 23.017 65.462 23.017 66.825 22.367 69.688 21.154 71.276 20.554 74.189 19.466 76.239 18.991 79.327 18.704 81.803 18.466 83.103 18.228 84.666 17.741 87.029 16.991 87.591 16.353 87.566 14.44 87.566 13.528 87.491 13.152 87.216 12.44 86.516 10.614 84.741 8.264 82.903 6.701 79.953 4.188 75.764 2.188 70.276.675 68.5.188 67.925.15 67.175.5ZM62.187 51.285C62.312 52.035 62.499 53.81 62.587 55.148 62.587 55.148 62.674 56.486 62.674 56.486 62.674 56.486 61.362 56.986 61.362 56.986 58.248 58.186 52.41 59.761 51.072 59.761 50.56 59.761 50.259 59.486 50.259 58.999 50.259 58.236 51.26 57.448 56.448 54.148 58.924 52.585 61.787 50.885 61.962 50.885 62.049 50.885 62.137 51.072 62.187 51.285Z"></path>
@@ -126,93 +131,93 @@
 		</svg>
 		<main class="d-flex flex-nowrap">
 
-			<!-- Start of navbar -->
-			<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+			<!-- Start of navbar lg+  d-md-block d-lg-block -->
+			<div class="d-none d-xs-block d-sm-block d-flex flex-column flex-shrink-0 p-3 text-bg-dark"  style="width: 280px; overflow: hidden;">
 				<a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-					<svg class="bi pe-none me-2" width="100%" height="40"><use xlink:href="#tode"/></svg>
+					<svg class="bi pe-none " width="100%" height="40"><use xlink:href="#tode"/></svg>
 					<span class="fs-4">Karateka'rchiviste</span>
 				</a>
 				<hr>
 				<ul class="nav nav-pills flex-column mb-auto text-white">
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#home"/></svg>
+						<button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#home"/></svg>
 							Accueil
-		        </button>
-		        <div class="collapse show" id="home-collapse" style="">
-		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="#" class="nav-link active" aria-current="page">Présentation</a></li>
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Disclaimer</a></li>
-		          </ul>
-		        </div>
-		      </li>
+						</button>
+						<div class="collapse show" id="home-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="/karate/index.html" class="nav-link active" >Présentation</a></li>
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Disclaimer</a></li>
+							</ul>
+						</div>
+					</li>
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#history-collapse" aria-expanded="false">
-							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#history"/></svg>	Histoire - 歷史
-		        </button>
-		        <div class="collapse" id="history-collapse" style="">
-		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="/karate/hist/karate.html" class="nav-link text-white">Histoire du karaté</a></li>
-		            <li><a href="/karate/hist/tode.html" class="nav-link text-white">Histoire de Tōde</a></li>
-		          </ul>
-		        </div>
-		      </li>
+						<button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#history-collapse" aria-expanded="false">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#history"/></svg>	Histoire - 歷史
+						</button>
+						<div class="collapse" id="history-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="/karate/hist/karate.html" class="nav-link text-white">Histoire du karaté</a></li>
+								<li><a href="/karate/hist/tode.html" class="nav-link text-white">Histoire de Tōde</a></li>
+							</ul>
+						</div>
+					</li>
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#ryu-collapse" aria-expanded="false">
-							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#ryu"/></svg>	Écoles - 流
-		        </button>
-		        <div class="collapse" id="ryu-collapse" style="">
-		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Écoles</a></li>
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Écoles japonaises</a></li>
+						<button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#ryu-collapse" aria-expanded="false">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#ryu"/></svg>	Écoles - 流
+						</button>
+						<div class="collapse" id="ryu-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Écoles</a></li>
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Écoles japonaises</a></li>
 								<li><a href="/karate/pages/404.html" class="nav-link text-white">Écoles okinawaïennes</a></li>
 								<li><a href="/karate/pages/404.html" class="nav-link text-white">Écoles américaines</a></li>
 								<li><a href="/karate/pages/404.html" class="nav-link text-white">Écoles européennes</a></li>
-		          </ul>
-		        </div>
-		      </li>
+							</ul>
+						</div>
+					</li>
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#shifu-collapse" aria-expanded="false">
-							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#shifu"/></svg>	Généalogie - 師譜
-		        </button>
-		        <div class="collapse" id="shifu-collapse" style="">
-		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Généalogie</a></li>
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Fondateurs de styles</a></li>
-		          </ul>
-		        </div>
-		      </li>
+						<button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#shifu-collapse" aria-expanded="false">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#shifu"/></svg>	Généalogie - 師譜
+						</button>
+						<div class="collapse" id="shifu-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Généalogie</a></li>
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Fondateurs de styles</a></li>
+							</ul>
+						</div>
+					</li>
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#waza-collapse" aria-expanded="false">
-							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#waza"/></svg>	Techniques - 技術
-		        </button>
-		        <div class="collapse" id="waza-collapse" style="">
-		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Techniques de main</a></li>
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Techniques de pied</a></li>
+						<button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#waza-collapse" aria-expanded="false">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#waza"/></svg>	Techniques - 技術
+						</button>
+						<div class="collapse" id="waza-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Techniques de main</a></li>
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Techniques de pied</a></li>
 								<li><a href="/karate/pages/404.html" class="nav-link text-white">Autres parties du corps</a></li>
 								<li><a href="/karate/pages/404.html" class="nav-link text-white">Postures</a></li>
 								<li><a href="/karate/pages/404.html" class="nav-link text-white">Déplacements</a></li>
-		          </ul>
-		        </div>
-		      </li>
+							</ul>
+						</div>
+					</li>
 					<li class="nav-item">
-		        <button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#kata-collapse" aria-expanded="false">
-							<svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#kata"/></svg>	Kata - 型
-		        </button>
-		        <div class="collapse" id="kata-collapse" style="">
-		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		            <li><a href="/karate/pages/kata/kata.html" class="nav-link text-white">Kata</a></li>
-		            <li><a href="/karate/pages/404.html" class="nav-link text-white">Shōtōkan Kata</a></li>
-		          </ul>
-		        </div>
-		      </li>
+						<button class="btn active rounded border-0" data-bs-toggle="collapse" data-bs-target="#kata-collapse" aria-expanded="true">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#kata"/></svg>	Kata - 型
+						</button>
+						<div class="collapse show" id="kata-collapse" style="">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="/karate/pages/404.html" class="nav-link active" aria-current="page">Kata</a></li>
+								<li><a href="/karate/pages/404.html" class="nav-link text-white">Shōtōkan Kata</a></li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 				<hr>
 
 
 				<div class="dropdown">
-					<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://i.servimg.com/u/f76/14/62/10/75/avatar10.jpg" alt="Auteur du site" width="32" height="32" class="rounded-circle me-2"><strong>L'auteur</strong>
+					<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://i.servimg.com/u/f76/14/62/10/75/avatar10.jpg" alt="Auteur du site" width="32" height="32" class="rounded-circle "><strong>Auteur</strong>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
 						<li><a class="dropdown-item" href="/karate/pages/whoami.html">Qui suis-je ?</a></li>
@@ -220,7 +225,57 @@
 					</ul>
 				</div>
 			</div>
-			<!-- End of navbar -->
+			<!-- End of navbar lg+-->
+
+			<!-- Start of navbar md-  d-md-none d-lg-none -->
+			<div class="d-block d-xs-none d-sm-none d-flex flex-column flex-shrink-0 p-3 text-bg-dark " style="width: 3rem; overflow: hidden;">
+				<a href="/karate/index.html" class="py-3 text-white">
+					<svg class="bi" width="1.5rem" height="1.5rem"><use xlink:href="#tode"></use></svg>
+				</a>
+				<ul class="nav nav-pills nav-flush flex-column mb-auto text-center"  style="--bs-nav-link-padding-y: 0;">
+					<li class="nav-item">
+						<a href="/karate/index.html" class="nav-link py-3 rounded-2 text-white active" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="home" data-bs-original-title="home">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#home"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="/karate/hist/karate.html" class="nav-link py-3 rounded-2 text-white" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="history" data-bs-original-title="history">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#history"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link py-3 rounded-2 text-white" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="ryu" data-bs-original-title="ryu">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#ryu"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="/karate/pages/404.html" class="nav-link py-3 rounded-2 text-white" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="shifu" data-bs-original-title="shifu">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#shifu"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="/karate/pages/404.html" class="nav-link py-3 rounded-2 text-white" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="waza" data-bs-original-title="waza">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#waza"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="/karate/pages/kata/kata.html" class="nav-link py-3 rounded-2 text-white" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="waza" data-bs-original-title="waza">
+							<svg class="bi pe-none " width="20" height="20"><use xlink:href="#kata"/></svg>
+						</a>
+					</li>
+				</ul>
+				<hr>
+				<div class="dropdown border-top">
+					<a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="https://i.servimg.com/u/f76/14/62/10/75/avatar10.jpg" alt="Auteur du site" width="32" height="32" class="rounded-circle ">
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+						<li><a class="dropdown-item" href="/karate/pages/whoami.html">Qui suis-je ?</a></li>
+						<li><a class="dropdown-item" href="/karate/pages/whoami.html#contact">Me contacter</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End of navbar md- -->
 
 			<div class="container text-center">
 			  <div class="row text-white">
